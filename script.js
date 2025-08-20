@@ -142,7 +142,7 @@ class EmergencyAlert {
                     <h3 class="text-3xl font-bold mb-4">HELP IS ON THE WAY</h3>
                     <p class="text-xl mb-6">Your emergency contacts have been notified</p>
                     <p class="text-lg mb-8">Stay calm. Someone will be with you shortly.</p>
-                    <button onclick="EmergencyAlert.instance.resetAlert()" class="bg-white text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <button onclick="resetAlert()" class="bg-white text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
                         OK
                     </button>
                 </div>
