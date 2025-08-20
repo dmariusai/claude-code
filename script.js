@@ -348,6 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add global methods for backward compatibility
     window.triggerEmergencyAlert = () => EmergencyAlert.instance.triggerEmergencyAlert();
     window.cancelAlert = () => EmergencyAlert.instance.cancelAlert();
+    window.resetAlert = () => EmergencyAlert.instance.resetAlert();
     window.showAgentDetails = (type) => AgentManager.showAgentDetails(type);
     window.closeAgentPanel = () => AgentManager.closeAgentPanel();
     
