@@ -1,0 +1,47 @@
+{
+  "name": "evercare-ai-medical-alert",
+  "version": "1.0.0",
+  "description": "AI-powered medical alert system designed for elderly patients with comprehensive health monitoring and emergency response capabilities",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --host=0.0.0.0",
+    "dev": "npx live-server --port=3000 --host=0.0.0.0 --watch=.",
+    "build": "npm run optimize && npm run minify",
+    "optimize": "npx imagemin-cli images/* --out-dir=dist/images",
+    "minify": "npx html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype index.html -o dist/index.html",
+    "test": "npx jest",
+    "lint": "npx eslint script.js",
+    "lighthouse": "npx lighthouse http://localhost:3000 --output html --output-path ./reports/lighthouse.html"
+  },
+  "keywords": [
+    "medical-alert",
+    "elderly-care",
+    "emergency-response",
+    "ai-healthcare",
+    "pwa",
+    "accessibility",
+    "telehealth"
+  ],
+  "author": "Evercare AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "html-minifier": "^4.0.0",
+    "imagemin-cli": "^7.0.0",
+    "lighthouse": "^10.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evercare-ai/medical-alert-system"
+  },
+  "bugs": {
+    "url": "https://github.com/evercare-ai/medical-alert-system/issues"
+  },
+  "homepage": "https://evercare-ai.github.io/medical-alert-system",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
